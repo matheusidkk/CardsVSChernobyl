@@ -1,0 +1,336 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: repeating-linear-gradient(90deg, #151515, #151515 10px, #181818 10px, #181818 20px);
+    width: 900px;
+    height: 650px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    overflow: hidden;
+}
+
+.comecarJogo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nickname {
+    height: 50px;
+    width: 100%;
+    border-radius: 0 10px 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f1d39a;
+}
+
+.lobbyTempo {
+    height: 50px;
+    width: 20%;
+    border-radius: 0 10px 0 10px;
+    text-align: center;
+    background-color: #f1d39a;
+}
+
+.submitIniciar {
+    height: 60px;
+    width: 30%;
+    border-radius: 0 10px 0 10px;
+    margin-top: 20px;
+}
+
+.tempo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    left: 250px;
+    border-radius: 0 10px 0 10px;
+    height: 50px;
+    width: 100px;
+    background-color: #f1d39a;
+}
+
+
+.arrastavel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -42px;
+    height: 200px;
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0 10px 0px 10px;
+    cursor: move;
+    transition: 0.1s;
+    box-shadow: 5px 5px 15px;
+    user-select: none;
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover, #card7:hover, #card8:hover {
+    z-index: 100;
+    padding: 10px;
+}
+
+.bloco {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 280px;
+    width: 70%;
+    top: 80px;
+    left: 30px;
+    background-color: #f1d39a;
+    border-radius: 0 10px 0px 10px;
+    border: 2px solid #000 ;
+}
+
+.bloco div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 0 10px 0px 10px;
+    border: 2px solid #000 ;
+    user-select: none;
+    font-size: 30px;
+}
+
+
+.resultado {
+    z-index: 50;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    border-radius: 0 10px 0 10px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: #f1d39a;
+    cursor: pointer;
+}
+
+.pontuacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    position: absolute;
+    top: 56px;
+    right: -5px;
+    height: 301px;
+    width: 55px;
+    background-color: #f1d39a;
+    border-radius: 0 0 0 10px;
+    border: 5px solid #222;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.players {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.pontPlayers {
+    margin: 0 5px 15px 10px;
+    padding: 0;
+}
+
+.organizador {
+    z-index: 50;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 0 10px 0 10px;
+    border: none;
+    background-color: #f1d39a;
+    font-size: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.organizador:hover {
+    height: 110px;
+    width: 110px;
+}
+
+
+
+.chat {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    top: -5px;
+    right: -5px;
+    height: 55%;
+    width: 250px;
+    margin-right: -250px;
+    border-radius: 0 0 0 10px;
+    border: 5px solid #222;
+    transition: 0.2s;
+    background-color: #f1d39a;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.formMensagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.username {
+    height: 35px;
+    width: 75%;
+    border-radius: 0 10px 0 10px;
+    border: 2px solid #222;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+
+.messagens {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #FFF;
+    height: 225px;
+    width: 95%;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+.escreverMens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoPerfil {
+    height: 100%;
+    cursor: pointer;
+}
+
+.chatConversa {
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    height: 80%;
+    width: 95%;
+    background-color: #222;
+    border-radius: 0 10px 0 10px;
+    margin-bottom: 5px;
+}
+
+.chatInput {
+    height: 35px;
+    width: 80%;
+    border-radius: 0 10px 0 10px;
+    border: 5px solid #222;
+}
+
+.chatInputBotao {
+    height: 46px;
+    width: 46px;
+    border-radius: 0 10px 0 10px;
+    border: 5px solid #222;
+    cursor: pointer;
+}
+
+.chatBotao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 55px;
+    width: 55px;
+    background-color: #f1d39a;
+    border-radius: 0 0 0 10px;
+    border: 5px solid #222;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.chatBotao div {
+    height: 5px;
+    width: 70%;
+    background-color: #000;
+    margin: 4px 0 4px 0
+}
+
+.testar {
+    position: absolute;
+    top: 5px;
+    left: 48%;
+    display: none;
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+}
+
+
+.imagens {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70%;
+    width: 80%;
+}
+
+main {
+    display: flex;
+    height: 255px;
+    width: 923px;
+    margin-bottom: 206px;
+    margin-left: 120px;
+}
+
+.screenshot-img {
+    width: 45%;
+    border-radius: 0 7px 0 7px;
+    right: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+}

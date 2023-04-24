@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas contra Chernobyl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="coresLoad()">
+
+    <div class="tempo">⏳ 00</div>
+
+    <main>
+        <div class="arrastavel" id="card1">Carta 1</div>
+        <div class="arrastavel" id="card2">Carta 2</div>
+        <div class="arrastavel" id="card3">Carta 3</div>
+        <div class="arrastavel" id="card4">Carta 4</div>
+        <div class="arrastavel" id="card5">Carta 5</div>
+        <div class="arrastavel" id="card6">Carta 6</div>
+        <div class="arrastavel" id="card7">Carta 7</div>
+        <div class="arrastavel" id="card8">Carta 8</div>
+
+
+        <div class="pontuacao">
+            <P class="players">P1:</P>
+            <P class="pontPlayers">00</P>
+            <P class="players">P2:</P>
+            <P class="pontPlayers">00</P>
+            <P class="players">P3:</P>
+            <P class="pontPlayers">00</P>
+            <P class="players">P4:</P>
+            <P class="pontPlayers">00</P>
+        </div>
+
+        <button class="organizador">Organizar</button>
+
+        
+        <div class="bloco">
+            <div class="pal"></div>
+            <div class="pal"></div>
+            <div class="pal"></div>
+            <div class="pal"></div>
+        </div>
+    </main>
+
+    <button class="resultado">Jogar</button>
+
+    <div class="chat">
+        <div class="perfil">
+            <img class="fotoPerfil" src="https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2015/09/26/150926165742__85730600_monkey2.jpg">
+        </div>
+        <div class="chatConversa">
+            <form class="formMensagens">
+                <input type="text" class="username" name="username" placeholder="username">
+                <div class="messagens"></div>
+                <div class="escreverMens">
+                    <input type="text" class="chatInput" name="message" placeholder="Digitar mensagem">
+                    <button type="submit" class="chatInputBotao"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="chatBotao">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <button class="testar">testar</button>
+
+    <form class="imagens">
+        <img class="screenshot-img" src="" alt="imagem 1">
+        <img class="screenshot-img" src="" alt="imagem 2">
+        <img class="screenshot-img" src="" alt="imagem 3">
+        <img class="screenshot-img" src="" alt="imagem 4">
+    </form>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="module" modulo.js></script>
+    <script src="script.js"></script>
+</body>
+</html>
