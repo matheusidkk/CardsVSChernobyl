@@ -209,7 +209,7 @@ let cartasPossiveis = [
 'bluezão',
 'é uma merda',
 'thiago',
-'rafael biel',
+'rafael biel'
 ]
 
 
@@ -240,9 +240,9 @@ let palavras2 = [
 'everson zoio',
 'bruno',
 'tiquinha',
-'al'
+'al',
 'thiago',
-'rafael biel',
+'rafael biel'
 ];
 
 let palavras3 = [
@@ -251,7 +251,7 @@ let palavras3 = [
 'na cracolandia',
 'na arabia',
 'em chernobyl',
-'ao vivo',
+'ao vivo'
 ];
 
 let palavras4 = [
@@ -262,7 +262,7 @@ let palavras4 = [
 'e acabei todo mijado',
 'e depois vomitei la',
 'e tirei uma foto',
-'e dei um mortal',
+'e dei um mortal'
 ];
 
 // Adiciona um evento de clique ao resultado para escolher aleatoriamente as palavras
