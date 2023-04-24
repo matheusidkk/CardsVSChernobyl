@@ -208,6 +208,8 @@ let cartasPossiveis = [
 'Eu caguei no',
 'bluezão',
 'é uma merda',
+'thiago',
+'rafael biel',
 ]
 
 
@@ -219,7 +221,7 @@ let palavras1 = [
     'Matei o',
     'Eu joguei o',
     'Eu peidei no',
-    ''
+    'Eu enfiei o rodo no'
 ];
 
 let palavras2 = [
@@ -239,6 +241,8 @@ let palavras2 = [
 'bruno',
 'tiquinha',
 'al'
+'thiago',
+'rafael biel',
 ];
 
 let palavras3 = [
@@ -247,6 +251,7 @@ let palavras3 = [
 'na cracolandia',
 'na arabia',
 'em chernobyl',
+'ao vivo',
 ];
 
 let palavras4 = [
